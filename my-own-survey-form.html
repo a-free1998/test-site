@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skier Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Skier Survey Form</h1>
+      <p id="description">Tell us about yourself</p>
+    </header>
+    <main>
+      <div>
+        <form
+          id="survey-form"
+          method="post"
+          action="https://register-demo.freecodecamp.org"
+        >
+          <fieldset>
+            <label for="name" id="name-label"
+              >Name<input
+                placeholder="Enter your name"
+                name="name"
+                id="name"
+                type="text"
+                required
+            /></label>
+            <label for="email" id="email-label"
+              >Email<input
+                placeholder="Enter your Email"
+                name="email"
+                id="email"
+                type="email"
+                required
+            /></label>
+            <label class="inline-label" for="age" id="number-label">Age</label>
+            <label class="inline-label" for="age" id="number-label"
+              >(optional)</label
+            >
+            <input
+              placeholder="Age"
+              name="age"
+              id="age"
+              type="number"
+              max="120"
+              min="10"
+            />
+            <label for="skier-type">What type of skier are you?</label>
+            <select name="skier-type" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Carver</option>
+              <option value="2">Park Rat</option>
+              <option value="3">All-mountain/Freerider</option>
+              <option value="4">Powder/Heli-skier only</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Do you you think you're superior to snowboarders?</legend>
+
+            <label for="definitely"
+              ><input
+                class="inline"
+                value="1"
+                name="radio"
+                id="definitely"
+                type="radio"
+                checked
+              />Definitely!</label
+            >
+
+            <label for="not-really"
+              ><input
+                class="inline"
+                value="2"
+                name="radio"
+                id="not-really"
+                type="radio"
+              />Not really, we're all the same!</label
+            >
+
+            <label for="no"
+              ><input
+                class="inline"
+                value="3"
+                name="radio"
+                id="no"
+                type="radio"
+              />No! Snowboarders are much cooler!</label
+            >
+            <legend>What ski areas have you been to?</legend>
+            <label for="snowbird"
+              ><input
+                class="inline"
+                value="1"
+                type="checkbox"
+                id="snowbird"
+              />Snowbird</label
+            >
+
+            <label for="park-city"
+              ><input
+                class="inline"
+                value="2"
+                type="checkbox"
+                id="park-city"
+              />Park City</label
+            >
+
+            <label for="solitude"
+              ><input
+                class="inline"
+                value="3"
+                type="checkbox"
+                id="solitude"
+              />Solitude Mountain</label
+            >
+
+            <label for="alta"
+              ><input
+                class="inline"
+                value="4"
+                type="checkbox"
+                id="alta"
+              />Alta</label
+            >
+
+            <label for="revelstoke"
+              ><input
+                class="inline"
+                value="5"
+                type="checkbox"
+                id="revelstoke"
+              />Revelstoke</label
+            >
+
+            <label for="whistler"
+              ><input
+                class="inline"
+                value="6"
+                type="checkbox"
+                id="whistler"
+              />Whistler Blackcomb</label
+            >
+
+            <label for="teton"
+              ><input
+                class="inline"
+                value="7"
+                type="checkbox"
+                id="teton"
+              />Teton Mountain</label
+            >
+
+            <label for="palisades"
+              ><input
+                class="inline"
+                value="8"
+                type="checkbox"
+                id="palisades"
+              />Palisades</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Tell us more about yourself</legend>
+            <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
+          </fieldset>
+          <input id="submit" type="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
